@@ -26,7 +26,7 @@ if __name__=="__main__":
     str_data = np.array([['' for h in xrange(len(str_cols))] \
                         for i in xrange(num_of_rows)], dtype='|S25')
     salary_data = np.zeros((num_of_rows, len(salary_cols)), dtype=float)
-    with open('mls.csv','r') as f:
+    with open(filename,'r') as f:
         # read first line into 'headers'
         headers = f.readline()
         reader = csv.reader(f)
